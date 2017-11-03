@@ -1,0 +1,47 @@
+/* ---------------- Overlay ---------------- */
+.m-extend-overlay,
+.m-extend-overlay-tablet,
+.m-extend-overlay-pro{
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	z-index: 50;
+	left: 0px;
+	top:0px;
+	background:rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+.m-extend-active.m-extend-overlay,
+.m-extend-active-tablet.m-extend-overlay-tablet,
+.m-extend-active-pro.m-extend-overlay-pro{
+	visibility: visible;
+	opacity: 0.6;
+}
+
+/* ---------------- m-extend field ---------------- */
+.m-extend,
+.m-extend-tablet,
+.m-extend-pro{
+	position: fixed;
+	z-index: 600;
+	top:0px;
+	height: 100%;
+	overflow-y:auto;
+	width: 250px;
+	background:#fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+/* -------- fixed left  -------- */
+.m-extend-fix-left{
+	left: -300px;
+}
+.m-extend-active-tablet.m-extend-fix-left,
+.m-extend-active-pro.m-extend-fix-left{
+	left: 0px;
+	visibility: visible;
+	opacity: 1;
+}
